@@ -12,10 +12,11 @@ using namespace std;
 int main() {
 	namedWindow("Teste", WINDOW_AUTOSIZE);
 	Mat image1, image2, imageAux;
-	VideoCapture cap(0);
+	//VideoCapture cap(0);
+	VideoCapture cap = VideoCapture(0);
 	if (!cap.isOpened()) { //verifica se cap abriu como esperado
 		cout << "camera ou arquivo em falta";
-		//return 1;
+		return 1;
 	}
 	image1 = imread("12.png", IMREAD_GRAYSCALE);
 
@@ -24,6 +25,8 @@ int main() {
 		return 1;
 	}
 
+	int minValue = 50;
+	int maxValue = 150;
 	while (true) {
 		cap >> image2;
 		if (image2.empty()) {
@@ -41,16 +44,33 @@ int main() {
 		Ptr<Feature2D> orb = ORB::create(400);
 		orb->detectAndCompute(image1, Mat(), kp1, descriptor1);
 		orb->detectAndCompute(image2, Mat(), kp2, descriptor2);
+		//Mat frame;
+		//cap.read(frame);
+		//imshow("frame", frame);
 
+		namedWindow("out", CV_WINDOW_AUTOSIZE);
+		createTrackbar("Min threshold: ", "out", &minValue, 500);
+		createTrackbar("Max threshold: ", "out", &maxValue, 500);
+		Mat blur;
+		GaussianBlur(image2, blur, Size(5, 5), 0);
+		Mat out;
+		Canny(blur, out, minValue, maxValue);
+		vector<vector<Point>> contorno;
+		findContours(out, contorno, RETR_TREE, CHAIN_APPROX_NONE);
+		drawContours(blur, contorno, -1, Scalar(0, 255, 0), 1);
+		imshow("Blur", blur);
+
+		imshow("out", out);
+				
 		drawKeypoints(image1, kp1, imageAux);
-		drawKeypoints(image2, kp2, image2);
+		//drawKeypoints(image2, kp2, image2);
 
 		imshow("teste", image2);
 		imshow("Teste", imageAux);
-		if (waitKey(1) == 27) {
+		if (waitKey(30) == 27) {
 			break;
 		}
 	}
-
+	cap.release();
 	destroyAllWindows();
 }
