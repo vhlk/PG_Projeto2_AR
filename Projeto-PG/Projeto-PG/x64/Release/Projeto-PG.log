@@ -1,46 +1,56 @@
 ﻿  main.cpp
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,54): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,54): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,54): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,54): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,96): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,96): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,96): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(114,96): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,54): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,54): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,54): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,54): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,96): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,96): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,96): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(115,96): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,54): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,54): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,54): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,54): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,96): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,96): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,96): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(116,96): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,54): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,54): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,54): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,54): warning C4244:         ]
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,96): warning C4244:         with
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,96): warning C4244:         [
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,96): warning C4244:             _Tp=float
-D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(117,96): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,34): warning C4244: 'argumento': conversão de 'float' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,34): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,34): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,34): warning C4244:             _Tp=int
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,34): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,19): warning C4244: 'argumento': conversão de 'float' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,19): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,19): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,19): warning C4244:             _Tp=int
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(70,19): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,54): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,54): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,54): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,54): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,96): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,96): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,96): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(145,96): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,54): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,54): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,54): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,54): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,96): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,96): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,96): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(146,96): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,54): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,54): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,54): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,54): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,96): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,96): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,96): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(147,96): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,54): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,54): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,54): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,54): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,54): warning C4244:         ]
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,96): warning C4244: 'argumento': conversão de 'int' para '_Tp', possível perda de dados
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,96): warning C4244:         with
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,96): warning C4244:         [
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,96): warning C4244:             _Tp=float
+D:\Victor\Documents\PG_Projeto2_AR\Projeto-PG\Projeto-PG\main.cpp(148,96): warning C4244:         ]
   Gerando código
-  1 of 303 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  1 of 324 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finalizada a geração de código

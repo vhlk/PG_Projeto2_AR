@@ -10,41 +10,76 @@ using namespace cv;
 using namespace std;
 
 int main() {
-	Mat image1, image2, imageAux;
-	VideoCapture cap(0);
-	if (!cap.isOpened()) { //verifica se cap abriu como esperado
-		cout << "camera ou arquivo em falta";
-		return 1;
-	}
-	image1 = imread("imgPercyCort.jpg");
-	
-	if (image1.empty()) { //verifica a imagem1
-		cout << "imagem 1 vazia";
-		return 1;
-	}
-	//cout << "largura: " << image1.cols << "\n" << "altura : " << image1.rows;
-	resize(image1, image1, Size(0,0), 0.1, 0.1);
-
-	cout << "Defina o valor para Good Matches (valor entre 0.4 e 0.75 e preferivel), ou de enter para o padrao) \n";
+	cout << "Defina o valor para Good Matches (valor entre 0.4 e 0.75 e preferivel), ou de enter para o padrao! \n";
 	//definir threshold para o good matches
 	string thresh;
 	float ratio_thresh;
-	if ('\n' == cin.get()) {
+	char firstLetter;
+	firstLetter = cin.get();
+	if ('\n' == firstLetter) {
 		ratio_thresh = 0.55f;
 	}
 	else {
-		cin >> thresh;
-		cout << thresh;
+		getline(cin, thresh);
+		thresh = firstLetter + thresh;
+		cout << thresh << "\n";
 		ratio_thresh = stof(thresh);
 		if (ratio_thresh > 1.0f || ratio_thresh < 0.0f) {
 			cout << "Valor inválido! \n";
 			return 1;
 		}
 	}
+	Mat image1, image2, imageAux;
+	VideoCapture cap(0);
+	if (!cap.isOpened()) { //verifica se cap abriu como esperado
+		cout << "camera ou arquivo em falta";
+		return 1;
+	}
+	string nomeImg;
+	cout << "Digite o nome da imagem que ira utilizar(na pasta imgs), ou de enter para a padrao! \n";
+	firstLetter = cin.get();
+	if ('\n' == firstLetter) {
+		nomeImg = "imgPercyCort.jpg";
+	}
+	else {
+		getline(cin, nomeImg);
+		nomeImg = firstLetter + nomeImg;
+		cout << nomeImg << "\n";
+	}
+	nomeImg = "../../imgs/" + nomeImg;
+	image1 = imread(nomeImg);
+	
+	if (image1.empty()) { //verifica a imagem1
+		cout << "imagem 1 vazia";
+		//return 1;
+	}
+	//cout << "largura: " << image1.cols << "\n" << "altura : " << image1.rows;
+
+	cout << "Digite as dimensoes da imagem (alt, larg), ou de enter para padrao!\n";
+	Size size = Size(0, 0);
+	firstLetter = cin.get();
+	if ('\n' == firstLetter) {
+		resize(image1, image1, Size(0, 0), 0.1, 0.1);
+		cout << "altura: " << image1.rows << "\n" << "largura: " << image1.cols;
+	}
+	else {
+		string largura, altura;
+		getline(cin, altura);
+		getline(cin, largura);
+		altura = firstLetter + altura;
+		size = Size(stof(largura), stof(altura));
+		resize(image1, image1, size);
+		cout << "altura: " << image1.rows << "\n" << "largura: " << image1.cols;
+	}
+
+	//criar trackbar para escolher as cores
 	namedWindow("Good Matches");
 	int colorH = 255;
 	int colorS = 255;
 	int colorV = 0;
+	createTrackbar("H", "Good Matches", &colorH, 255);
+	createTrackbar("S", "Good Matches", &colorS, 255);
+	createTrackbar("V", "Good Matches", &colorV, 255);
 	while (true) {
 		cap >> image2;
 		if (image2.empty()) {
@@ -78,10 +113,6 @@ int main() {
 			}
 		}
 
-		createTrackbar("H", "Good Matches", &colorH, 255);
-		createTrackbar("S", "Good Matches", &colorS, 255);
-		createTrackbar("V", "Good Matches", &colorV, 255);
-
 		//Desenhar imagem de comparacao
 		Mat img_matches;
 		drawMatches(image1, kp1, image2, kp2, good_matches, img_matches, Scalar::all(-1),
@@ -111,10 +142,10 @@ int main() {
 			if (!h.empty()) {
 				vector<Point2f> verticesCam(4);
 				perspectiveTransform(verticesImg, verticesCam, h);
-				line(img_matches, verticesCam[0] + Point2f(image1.cols, 0), verticesCam[1] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 5);
-				line(img_matches, verticesCam[1] + Point2f(image1.cols, 0), verticesCam[2] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 5);
-				line(img_matches, verticesCam[2] + Point2f(image1.cols, 0), verticesCam[3] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 5);
-				line(img_matches, verticesCam[3] + Point2f(image1.cols, 0), verticesCam[0] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 5);
+				line(img_matches, verticesCam[0] + Point2f(image1.cols, 0), verticesCam[1] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 1);
+				line(img_matches, verticesCam[1] + Point2f(image1.cols, 0), verticesCam[2] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 1);
+				line(img_matches, verticesCam[2] + Point2f(image1.cols, 0), verticesCam[3] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 1);
+				line(img_matches, verticesCam[3] + Point2f(image1.cols, 0), verticesCam[0] + Point2f(image1.cols, 0), Scalar((double)colorH, (double)colorS, (double)colorV), 1);
 			}
 			
 			imshow("Good Matches", img_matches);
